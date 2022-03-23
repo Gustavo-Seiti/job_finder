@@ -21,5 +21,9 @@ db
 
 app.get('/', (req, res) => {
     res.send("Tá funcionando mano, primeira rota get!")
-const db = require('./db/connection')
+    
 })
+
+// jobs routers
+
+app.use('/jobs', require('./routes/jobs_r'));
