@@ -60,17 +60,21 @@ Por último utilizamos uma Query CSS "@media" para dispositivos com telas menore
 
 ## Screenshot - Exemplo
 
+
 Página principal
 
 <img src="https://user-images.githubusercontent.com/78318961/163689708-3a237a1c-14e7-4288-83e1-446d1c98fd2d.png">
+
 
 Página de cadastro de vagas
 
 <img src="https://user-images.githubusercontent.com/78318961/163689735-7f1e5778-08f6-4460-ba11-131cd127e42f.png">
 
+
 Página principal - Celular
 
 <img src="https://user-images.githubusercontent.com/78318961/163689806-f0f75c16-5e05-42b3-b1f9-1aa488fd9189.jpeg" width = 50% >
+
 
 Página de cadastro de vagas - Celular
 
