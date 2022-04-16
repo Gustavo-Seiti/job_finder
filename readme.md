@@ -70,11 +70,11 @@ Página de cadastro de vagas
 
 Página principal - Celular
 
-<img width = "80%" src="https://user-images.githubusercontent.com/78318961/163689806-f0f75c16-5e05-42b3-b1f9-1aa488fd9189.jpeg">
+<img src="https://user-images.githubusercontent.com/78318961/163689806-f0f75c16-5e05-42b3-b1f9-1aa488fd9189.jpeg" width = "80%" >
 
 Página de cadastro de vagas - Celular
 
-<img width = "80%" src="https://user-images.githubusercontent.com/78318961/163689910-ecc6f326-553e-4a67-abc9-82aa674f197f.jpeg">
+<img src="https://user-images.githubusercontent.com/78318961/163689910-ecc6f326-553e-4a67-abc9-82aa674f197f.jpeg" width = "80%" >
 
 
 ## Quer clonar esse repositório?
