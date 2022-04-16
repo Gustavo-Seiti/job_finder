@@ -22,6 +22,8 @@ Nesse projeto utilizamos as seguintes tecnologias:
 
 * [SQLite](https://www.sqlite.org/index.html) : Banco de dados relacional que utiliza SQL;
 
+* [Sequelize](https://sequelize.org/) : Utilizado para mapear dados relacionais em objetos Javascript;
+
 * [Heroku](heroku.com) : Plataforma de nuvem para várias linguagens;
 
 
@@ -37,85 +39,48 @@ $ npm install sqlite3
 ```sh
 $ npm install express
 ```
+* Sequelize - Deve ser instalado via terminal;
+```sh
+$ npm sequelize
+```
 * Handlebars - Deve ser instalado via terminal;
 ```sh
 $ npm install handlebars
 ```
 
 
-## Banco de dados
+## Resumo
 
-Na primeira execução da aplicação ela verificará se a tabela agenda-petshop existe, se ainda não existir ela será criada.
+Nesse projeto utilizamos o Handlebars para renderizar o HTML para o Front-End e passar os objetos (dataValues) que retornam do banco de dados após uma consulta ou inserção. Ainda no Front-End utilizamos CSS puro e o Bootstrap 5 para estilizar textos, imagens e menus.
 
-Para configurar a conexao com seu Database abra o arquivo conexao.js e altere o que for necessário.
+Para fazer a conexão com o banco de dados SQLite, utilizamos o Sequelize e fizemos o mapeamento das tabelas relacionais em objetos Javascript.
 
-```sh
-const conexao = mysql.createConnection({
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: '9608',
-    database: 'agenda-petshop'
-})
-```
+Por último utilizamos uma Query CSS "@media" para dispositivos com telas menores, para que a página permanecesse responsiva e organizada mesmo em celulares.
 
-
-## Rotas
-
-
-Lista todos os atendimentos do banco de dados;
-```sh
-app.get("/atendimentos", (req, res) => {
-    Atendimento.listar(res);
-})
-```
-
-Seleciona o atendimento com o id informado na requisição:
-```sh
-app.get("/atendimentos/:id", (req, res) =>{
-    const id = parseInt(req.params.id)
-    Atendimento.buscaPorId(id, res)
-})
-```
-
-Cadastra novo atendimento no banco de dados:
-```sh
-app.post("/atendimentos", (req, res) => {
-    const atendimento = req.body
-    Atendimento.adicionar(atendimento, res)
-})
-```
-Atualiza campos de atendimento existente:
-```sh
-app.patch("/atendimentos/:id", (req, res) => {
-    const id = parseInt(req.params.id)
-    const valores = req.body
-    Atendimento.altera(id,valores, res)
-})
-```
-Exclui atendimento do banco de dados:
-```sh
-app.delete("/atendimentos/:id", (req, res) => {
-    const id = parseInt(req.params.id)
-    Atendimento.deleta(id, res)
-})
-```
 
 ## Screenshot - Exemplo
 
-Request GET no Postman passando parâmetro id = 5
+Página principal
 
-<img src="https://user-images.githubusercontent.com/78318961/154263155-a0650ad2-14ba-4a63-b140-2b7e14b905d0.png">
+<img src="https://user-images.githubusercontent.com/78318961/163689708-3a237a1c-14e7-4288-83e1-446d1c98fd2d.png">
 
-Retorno de objeto JSON
+Página de cadastro de vagas
 
-<img src="https://user-images.githubusercontent.com/78318961/154263234-d061636e-38d1-46e7-ac58-8af11c93be55.png">
+<img src="https://user-images.githubusercontent.com/78318961/163689735-7f1e5778-08f6-4460-ba11-131cd127e42f.png">
+
+Página principal - Celular
+
+<img src="https://user-images.githubusercontent.com/78318961/163689806-f0f75c16-5e05-42b3-b1f9-1aa488fd9189.jpeg">
+
+Página de cadastro de vagas - Celular
+
+<img src="https://user-images.githubusercontent.com/78318961/163689910-ecc6f326-553e-4a67-abc9-82aa674f197f.jpeg">
 
 
 ## Quer clonar esse repositório?
 
 ```sh
-git clone https://github.com/Gustavo-Seiti/API_NODE.git
+git clone https://github.com/Gustavo-Seiti/job_finder.git
 
 ```
 
